@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ '11' ]
+        java: [ '8' ]
 
     steps:
       - name: Checkout ${{ github.ref }} ( ${{ github.sha }} )
@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: ${{ matrix.java }}
-          distribution: 'zulu'
+          distribution: 'oracle'
 
       - name: compile
         run: |
