@@ -4,9 +4,7 @@ version := "1.3.3-SNAPSHOT"
 
 organization := "org.scalanlp"
 
-scalaVersion := "2.10.4"
-
-crossScalaVersions  := Seq("2.11.2", "2.10.4")
+scalaVersion := "2.13.2"
 
 scalacOptions := Seq("-feature", "-deprecation")
 
